@@ -2,6 +2,9 @@
 body{
   font-family: sans-serif;
 }
+.main{
+  display: flex;
+}
 
 .sidebar{
   width: 340px;
@@ -89,4 +92,45 @@ body{
   font-weight: 500;
   margin: 20px 0 0 ;
   text-align: center;
+}
+.content-wrapper{
+  width: 100%;
+}
+.home-wrapper{
+  width: 1200px;
+  padding: 200px 0 202px;
+  border-bottom: 4px solid;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-title-wrapper{
+  width: 50%;
+}
+.home-title{
+  font-size: 72px;
+  font-weight: 600;
+  font-family: Jost;
+  color: #0e090d;
+}
+.home-title-wrapper p{
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.picture{
+  width: 450px;
+  height: 550px;
+  background-color: #ffcc0d;
+  margin: 30px 120px 30px 30px;
+  padding: 30px;
+  border: 10px solid;
+}
+
+.home-arrow{
+  font-size: 50px;
+  position: relative;
+  top: 550px;
+  left: 160px;
 }
