@@ -45,6 +45,23 @@ function App() {
               </div>
               <BsFillArrowDownSquareFill className="home-arrow"/>
             </div>
+            <div className="about-wrapper">
+              <div className="about-title-wrapper">
+                <div className="about-title">ABOUT ME</div>
+                <div className="about-dsec">I'm a Freelancer Front-end Developer with over 12 years of experience. I'm from London, UK. I code and create web elements for amazing people around the world. I like work with new people. New people are new experiences.</div>
+              </div>
+              <ul className="about-label-wrapper">
+                <li className="about-label">Name: Felicia Amor</li>
+                <li className="about-label">Birthday: June 14, 1992</li>
+                <li className="about-label">Age: 29 Years</li>
+                <li className="about-label">Adress: London, UK</li>
+                <li className="about-label">Phone: (+1) 7785 355 344</li>
+                <li className="about-label">Skype: Felicia.A</li>
+                <li className="about-label">Email: felicia@domainname.com</li>
+                <li className="about-label">Telegram: Available</li>
+              </ul>
+              <BsFillArrowDownSquareFill className="about-arrow"/>
+            </div>
         </div>
       </main>
     </div>
