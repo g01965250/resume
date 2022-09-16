@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <main className="main">
+        <div className="sidebar-fix"></div>
         <div className="sidebar">
           <BsFillArrowLeftSquareFill className="sidebar-arrow"/>
           <nav className="nav-wrapper">
@@ -61,6 +62,33 @@ function App() {
                 <li className="about-label">Telegram: Available</li>
               </ul>
               <BsFillArrowDownSquareFill className="about-arrow"/>
+            </div>
+            <div className="education-wrapper">
+              <div className="education-title">EDUCATION</div>
+              <ul>
+                <li>
+                  <div className="education-item">
+                    <h3>FRENIFY UNIVERSITY<span>( 2014 — 2017 )</span></h3>
+                    <h2>Computer Science</h2>
+                    <p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </li>
+                <li>
+                  <div className="education-item">
+                    <h3>EDU UNIVERSITY<span>( 2011 — 2014 )</span></h3>
+                    <h2>Master Degree</h2>
+                    <p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </li>
+                <li>
+                  <div className="education-item">
+                    <h3>CLOLUMBIA COLLEGE<span>( 2007 — 2011 )</span></h3>
+                    <h2>Computer Science</h2>
+                    <p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </li>
+              </ul>
+              <BsFillArrowDownSquareFill className="education-arrow"/>
             </div>
         </div>
       </main>
