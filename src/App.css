@@ -171,7 +171,7 @@ body{
   font-size: 40px;
   position: relative;
   top: 230px;
-  left: 109%;
+  left: 110%;
 }
 
 .education-wrapper{
@@ -230,4 +230,68 @@ margin: 0 0 20px;
   position: relative;
   top: 230px;
   left: 140%;
+}
+
+
+.skill-wrapper{
+  padding: 200px 0 202px;
+  border-bottom: 4px solid;
+  margin: 0 auto 20px;
+  max-width: 800px;
+}
+.skill-title{
+  font-size: 72px;
+  font-weight: 600;
+  padding-bottom: 29px;
+  margin-bottom: 43px;
+  font-family: Jost;
+  text-align: center;
+}
+.skill-bar-wrapper{
+width: 100%;
+border: solid 4px;
+padding: 10px;
+margin:  0 0 20px;
+}
+.skill-bar{
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: Jost;
+  line-height: 52px;
+  padding: 0 15px;
+  background: #ffcc0d;
+  box-sizing: border-box;
+}
+.skill-bar span{
+  font-family: Jost,Arial,Helvetica,sans-serif;
+  position: absolute  ;  
+  right: 0%;
+  padding: 0 15px;;
+}
+.bar-style92{
+  width: 92%;
+}
+.bar-style95{
+  width: 95%;
+}
+.bar-style80{
+  width: 80%;
+}
+.bar-style85{
+  width: 85%;
+}
+.skill-desc{
+  font-size: 22px;
+  font-weight: 400;
+  font-family: Jost,Arial,Helvetica,sans-serif;
+  margin: 0;
+  line-height: 30.14px;
+  text-align: center;
+}
+.skill-arrow{
+  font-size: 40px;
+  position: relative;
+  left: 140%;
+  top: 225px;
 }

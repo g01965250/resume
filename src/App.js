@@ -90,6 +90,36 @@ function App() {
               </ul>
               <BsFillArrowDownSquareFill className="education-arrow"/>
             </div>
+            <div className="skill-wrapper">
+              <div className="skill-title">SKILL</div>
+                <div className="skill-bar-wrapper ">
+                  <div className="bar-style92">
+                    <div className="skill-bar">Adobe Photoshop<span>92%</span></div>
+                  </div>
+                </div>
+                <div className="skill-bar-wrapper">
+                  <div className="bar-style95">
+                    <div className="skill-bar">HTML5 & CSS3<span>95%</span></div>
+                  </div>
+                 </div>
+                <div className="skill-bar-wrapper">
+                  <div className="bar-style80">
+                    <div className="skill-bar">WordPress<span>80%</span></div>
+                  </div>
+                </div>
+                <div className="skill-bar-wrapper">
+                  <div className="bar-style85">
+                    <div className="skill-bar">Adobe Illustrator<span>85%</span></div>
+                  </div>
+                </div>
+                <div className="skill-desc">
+                A freelance creative designer with a love for minimal design, clean typography
+                and well-written code, located in San Francisco. Provide high quality and
+                cost effective offshore web and software development services. Wide range of
+                web and software development services across the world.
+                </div>
+              <BsFillArrowDownSquareFill className="skill-arrow"/>
+            </div>
         </div>
       </main>
     </div>
