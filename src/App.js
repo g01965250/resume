@@ -152,6 +152,26 @@ function App() {
               </div>
               <BsFillArrowDownSquareFill className="project-arrow"/>
             </div>
+            <div className="contact-wrapper">
+                <div className="contact-title">CONTACT</div>
+              <div className="contact-input-wrapper">
+                <input className="contact-input"placeholder="Name *"></input>
+                <input className="contact-input"placeholder="Email *"></input>
+                <input className="contact-input phone"placeholder="Phione"></input>
+                <textarea className="contact-input message"placeholder="Message"></textarea>
+                <div className="contact-btn-wrapper">
+                  <a href="#" className="contact-btn">SEND MESSAGE</a>
+                </div>
+              </div>
+              <div className="contact-info">
+                <p>ADDRESS</p>
+                <h3>69 Queen St, London, United Kingdom</h3>
+                <p>PHONE</p>
+                <h3>(+706) 898-0751</h3>
+                <p><a href="#">frenifyteam@gmail.com</a></p>
+              </div>
+              <BsFillArrowDownSquareFill className="project-arrow"/>
+            </div>
         </div>
       </main>
     </div>

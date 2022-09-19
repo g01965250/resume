@@ -301,7 +301,6 @@ margin:  0 0 20px;
   padding: 171px 0 0;
   border-bottom: 4px solid;
   margin: 0 auto 20px;
- 
 }
 .project-title-wrapper{
   max-width: 800px;
@@ -374,4 +373,78 @@ margin:  0 0 20px;
   position: relative;
   left: 110%;
   top: 30px;
+}
+
+
+.contact-wrapper{
+  padding: 171px 0 0;
+  border-bottom: 4px solid;
+  margin: 0 auto 20px;
+}
+.contact-title{
+  font-size: 72px;
+  font-weight: 600;
+  padding-bottom: 29px;
+  margin-bottom: 43px;
+  font-family: Jost;
+  text-align: center;
+}
+.contact-input-wrapper{
+  margin: 0 auto;
+  width: 820px;
+}
+.contact-input{
+  width: 390px;
+  height: 70px;
+  font-size: 22px;
+  color: #000;
+  border: 2px solid;
+  padding: 0 30px 0;
+  box-sizing: border-box;
+  margin: 0 0 20px 20px;
+}
+.phone{
+  width: 800px;
+}
+.message{
+  width: 800px;
+  height: 200px;
+}
+.contact-btn-wrapper{
+  width: 800px;
+  background: #ffcc0d;
+  height: 70px;
+  text-align: center;
+  align-items: center;
+  margin: 0 0 0 20px;
+}
+.contact-btn{
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  line-height: 70px;
+  font-weight: 600;
+  padding: 25px 327px;
+}
+.contact-info{
+  width: 800px;
+  margin: 86px auto;
+  text-align: center;
+}
+.contact-info p{
+  font-size: 14px;
+  font-family: Jost,Arial,Helvetica,sans-serif;
+  margin: 0 0px 10px;
+}
+.contact-info h3{
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 58px;
+  font-family: Jost;
+}
+.contact-info a{
+  font-size: 22px;
+  font-weight: 400;
+  color: #000;
+  text-decoration-color: #ffcc0d;
 }
