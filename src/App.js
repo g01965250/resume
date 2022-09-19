@@ -1,6 +1,9 @@
 import React from "react";
 import { FaTwitter,FaFacebookF ,FaInstagramSquare,FaPinterest,FaYoutube} from "react-icons/fa";
 import { BsFillArrowLeftSquareFill,BsFillArrowDownSquareFill } from "react-icons/bs";
+import img2 from "./image/2.jpg";
+import img3 from "./image/3.jpg";
+import img4 from "./image/4.jpg";
 
 import './App.css';
 
@@ -119,6 +122,35 @@ function App() {
                 web and software development services across the world.
                 </div>
               <BsFillArrowDownSquareFill className="skill-arrow"/>
+            </div>
+            <div className="project-wrapper">
+              <div className="project-title-wrapper">
+                <div className="project-title">PROJECT</div>
+                <div className="project-desc">Now, I’m working on a professional, visually sophisticated and technologically proficient, responsive and multi-functional wordpress theme Elonissa. If you are interested to work with me, click below button and contact with me right now, so we can talk about your project.              </div>
+              </div>
+              <div className="project-list-wrapper">
+                <div className="project-list">
+                  <div className="project-list-title">Smashing Magazine Print</div>
+                  <div className="project-list-desc">illustration, design</div>
+                  <div className="project-list-image img1"></div>
+                </div>
+                <div className="project-list project-list-left">
+                  <div className="project-list-image img2"></div>
+                  <div className="project-list-title">Revolution Book</div>
+                  <div className="project-list-desc">illustration, design</div>
+                </div>
+                <div className="project-list">
+                  <div className="project-list-title">Dreamers Logo</div>
+                  <div className="project-list-desc">illustration, design</div>
+                <div className="project-list-image img3"></div>
+                </div>
+                <div className="project-list project-list-left">
+                  <div className="project-list-image img4"></div>
+                  <div className="project-list-title">Reductive Design</div>
+                  <div className="project-list-desc">illustration, design</div>
+                </div>
+              </div>
+              <BsFillArrowDownSquareFill className="project-arrow"/>
             </div>
         </div>
       </main>
