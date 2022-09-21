@@ -1,5 +1,4 @@
-
-body{
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');body{
   font-family: sans-serif;
 }
 .main{
@@ -9,7 +8,7 @@ body{
 
 .sidebar{
   width: 340px;
-  padding: 110px 20px ;
+  padding: 110px 20px 130px;
   margin: 0 20px;
   box-sizing: border-box;
   position: fixed;
@@ -62,7 +61,7 @@ body{
   margin: 0px 0 0 -20px;
 }
 .social ul{
-  padding: 85px 0 0 0;
+  padding: 130px 0;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -71,9 +70,9 @@ body{
 }
 .social ul a{
   color: #000;
+  padding: 11.5px 12px 7.5px 12px;
 }
 .social li {
-  padding: 11.5px 12px 7.5px 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,6 +159,7 @@ body{
   margin: 0 auto;
 }
 .about-label{
+  line-height: 41px;
   font-size: 30px;
   font-weight: 400;
   padding: 7px 26px;
@@ -201,7 +201,7 @@ margin: 0 0 20px;
 .education-item h3{
   font-size: 18px;
   font-weight: 600;
-  font-family: Jost;
+  font-family: 'Noto Sans TC', sans-serif;
   margin:0 0 6px;
   line-height: 30px;
 }
@@ -214,7 +214,7 @@ margin: 0 0 20px;
 .education-item h2{
   font-size: 30px;
   font-weight: 600;
-  font-family: Jost;
+  font-family: 'Noto Sans TC', sans-serif;
   margin:0 0 17px;
   line-height: 34px;
 }
@@ -409,6 +409,7 @@ margin:  0 0 20px;
 .message{
   width: 800px;
   height: 200px;
+  padding: 16px 30px;
 }
 .contact-btn-wrapper{
   width: 800px;
@@ -447,4 +448,8 @@ margin:  0 0 20px;
   font-weight: 400;
   color: #000;
   text-decoration-color: #ffcc0d;
+}
+
+.chinese{
+font-family: 'Noto Sans TC', sans-serif;
 }
