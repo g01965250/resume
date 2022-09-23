@@ -104,22 +104,52 @@
   width: 50%;
 }
 .home-title{
-  font-size: 72px;
+  font-size: 80px;
   font-weight: 600;
   font-family: Jost;
   color: #0e090d;
+  margin: 0 0 0 90px;
+  line-height: 110px;
 }
 .home-title-wrapper p{
   font-size: 22px;
   font-weight: 400;
 }
+.picture-wrapper{
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  top: 50px;
+  left: 14px;
+}
+.picture-border{
+  width: 450px;
+  height: 550px;
+  padding: 30px;
+  border: 10px solid;
+  position: relative;
+  z-index: 2;
+  top: -40px;
+  left: 24px;
+}
 .picture{
   width: 450px;
   height: 550px;
+  background: url(./image/about.jpg);
+  background-size: cover;
+  position: absolute;
+  z-index: 3;
+  top: 0px;
+  left: 64px;
+}
+.picture-background{
+  width: 550px;
+  height: 450px;
   background-color: #ffcc0d;
-  margin: 30px 120px 30px 30px;
-  padding: 30px;
-  border: 10px solid;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: 14px;
 }
 .home-arrow{
   font-size: 50px;
@@ -269,17 +299,20 @@ margin:  0 0 20px;
   right: 0%;
   padding: 0 15px;;
 }
-.bar-style92{
-  width: 92%;
-}
-.bar-style95{
-  width: 95%;
-}
 .bar-style80{
   width: 80%;
 }
-.bar-style85{
-  width: 85%;
+.bar-style77{
+  width: 77%;
+}
+.bar-style70{
+  width: 70%;
+}
+.bar-style65{
+  width: 65%;
+}
+.bar-style60{
+  width: 60%;
 }
 .skill-desc{
   font-size: 22px;
@@ -378,16 +411,21 @@ margin:  0 0 20px;
 
 .contact-wrapper{
   padding: 171px 0 0;
-  border-bottom: 4px solid;
   margin: 0 auto 20px;
 }
 .contact-title{
   font-size: 72px;
   font-weight: 600;
   padding-bottom: 29px;
-  margin-bottom: 43px;
   font-family: Jost;
   text-align: center;
+  width: 800px;
+  margin: 0 auto 43px;
+}
+.frm-inputs{
+  border: 0;
+  width: 800px;
+  margin: 0 auto;
 }
 .contact-input-wrapper{
   margin: 0 auto;
@@ -415,17 +453,10 @@ margin:  0 0 20px;
   width: 800px;
   background: #ffcc0d;
   height: 70px;
-  text-align: center;
-  align-items: center;
   margin: 0 0 0 20px;
-}
-.contact-btn{
-  text-decoration: none;
   font-size: 18px;
   color: #000;
-  line-height: 70px;
   font-weight: 600;
-  padding: 25px 327px;
 }
 .contact-info{
   width: 800px;
@@ -441,7 +472,7 @@ margin:  0 0 20px;
   font-size: 30px;
   font-weight: 700;
   margin: 0 0 58px;
-  font-family: Jost;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 .contact-info a{
   font-size: 22px;
@@ -452,4 +483,16 @@ margin:  0 0 20px;
 
 .chinese{
 font-family: 'Noto Sans TC', sans-serif;
+}
+.title-bottomLine{
+  position: relative;
+}
+.title-bottomLine::after{
+  content: " ";
+  width: 200px;
+  height: 10px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 37%;
 }
