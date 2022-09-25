@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.fa55290c.css",
+    "main.css": "/resume/static/css/main.71bd9be9.css",
     "main.js": "/resume/static/js/main.8beb3488.js",
     "static/js/787.dc9ee2bf.chunk.js": "/resume/static/js/787.dc9ee2bf.chunk.js",
     "static/media/line.jpg": "/resume/static/media/line.7edca71e7b7d22c5194d.jpg",
     "static/media/about.jpg": "/resume/static/media/about.4e32c14c1cb095c68e31.jpg",
     "static/media/Pomodoro.jpg": "/resume/static/media/Pomodoro.8dc62c9b047521860557.jpg",
-    "static/media/todolist.jpg": "/resume/static/media/todolist.de09d21362dd2f5b504a.jpg",
-    "static/media/Calculator.jpg": "/resume/static/media/Calculator.c09fe65538523eae9c35.jpg",
+    "static/media/todolist.jpg": "/resume/static/media/todolist.631d94b25502b6d38528.jpg",
+    "static/media/Calculator.jpg": "/resume/static/media/Calculator.dff7240f4e26487e4e8b.jpg",
     "index.html": "/resume/index.html",
-    "main.fa55290c.css.map": "/resume/static/css/main.fa55290c.css.map",
+    "main.71bd9be9.css.map": "/resume/static/css/main.71bd9be9.css.map",
     "main.8beb3488.js.map": "/resume/static/js/main.8beb3488.js.map",
     "787.dc9ee2bf.chunk.js.map": "/resume/static/js/787.dc9ee2bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa55290c.css",
+    "static/css/main.71bd9be9.css",
     "static/js/main.8beb3488.js"
   ]
 }
