@@ -419,6 +419,8 @@ margin: 0 0 20px;
 .project-list-image:hover{
   filter:none;
   background-size:contain ;
+  transform: scale(0.9,0.9);
+  transition:all 0.5s ease 0s
 }
 .img1{
   background-image: url(./image/Calculator.jpg);
