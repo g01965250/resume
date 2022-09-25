@@ -106,6 +106,12 @@ display: flex;
   justify-content: center;
   align-items: center;
 }
+.home-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+}
 .home-title-wrapper{
   width: 50%;
 }
