@@ -359,8 +359,7 @@ margin: 0 0 20px;
   margin: 0 auto 20px;
 }
 .project-title-wrapper{
-  /* max-width: 800px; */
-  margin: 0 auto;
+  margin:  auto;
 }
 .project-title{
   font-size: 72px;
@@ -382,6 +381,7 @@ margin: 0 0 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  min-width: 1250px;
 }
 .project-list{
   width: 570px;
@@ -409,7 +409,7 @@ margin: 0 0 20px;
 .project-list-image{
   width: 570px;
   height: 570px;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(1);
@@ -417,7 +417,8 @@ margin: 0 0 20px;
   border-radius: 10px;
 }
 .project-list-image:hover{
-  filter:none
+  filter:none;
+  background-size:contain ;
 }
 .img1{
   background-image: url(./image/Calculator.jpg);
