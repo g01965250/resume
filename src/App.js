@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTwitter,FaFacebookF ,FaInstagramSquare,FaGithub,FaYoutube} from "react-icons/fa";
+import { FaTwitter,FaFacebookF ,FaInstagramSquare,FaGithub,FaYoutube,FaHtml5,FaCss3Alt} from "react-icons/fa";
 import { BsFillArrowLeftSquareFill,BsFillArrowDownSquareFill } from "react-icons/bs";
 import './App.css';
 
@@ -7,7 +7,6 @@ function App() {
   return (
     <div className="App">
       <main className="main">
-        <div className="sidebar-fix"></div>
         <div className="sidebar">
           <BsFillArrowLeftSquareFill className="sidebar-arrow"/>
           <nav className="nav-wrapper">
@@ -34,113 +33,119 @@ function App() {
           </div>
         </div>
         <div className="content-wrapper">
-            <div id="home" className="home-wrapper">
-              <div className="picture-wrapper">
-                <div className="picture-border"></div>
-                  <div className="picture"></div>
-                <div className="picture-background"></div>
+            <div id="home" className="home-wrapper wrapper-bottomLine">
+              <div className="home-content">
+                <div className="picture-wrapper">
+                  <div className="picture-border"></div>
+                    <div className="picture"></div>
+                  <div className="picture-background"></div>
+                </div>
+                <div className="home-title-wrapper">
+                  <div className="home-title">Hello,<br/>I'm 冠宇 <br/>A Frontend Developer Beginner</div>
+                </div>
               </div>
-              <div className="home-title-wrapper">
-                <div className="home-title">Hello,<br/>I'm 冠宇 <br/>A Frontend Developer Beginner</div>
-              </div>
-              <BsFillArrowDownSquareFill className="home-arrow"/>
+              <BsFillArrowDownSquareFill className="arrow"/>
             </div>
-            <div id="about" className="about-wrapper">
-              <div className="about-title-wrapper">
-                <div className="about-title title-bottomLine">ABOUT ME</div>
-                <div className="about-dsec">I'm a Freelancer Front-end Developer with over 12 years of experience. I'm from London, UK. I code and create web elements for amazing people around the world. I like work with new people. New people are new experiences.</div>
+            <div id="about" className="about-wrapper wrapper-bottomLine">
+              <div className="about-content">
+                <div className="about-title-wrapper">
+                  <div className="about-title title-bottomLine">ABOUT ME</div>
+                  <div className="about-dsec">熱愛學習新知，自學前端網頁設計半年左右的時間，熟悉HTML語法、CSS排版、JavaScript應用與撰寫、React框架運用，目前持續精進各項語言，朝著偉大的航道前進。</div>
+                </div>
+                <ul className="about-label-wrapper">
+                  <li className="about-label">Name: <span className="chinese">朱冠宇</span></li>
+                  <li className="about-label">Birthday: July 22, 1993</li>
+                  <li className="about-label">Age: 29 Years</li>
+                  <li className="about-label">Adress:<span className="chinese"> 新竹,臺灣</span></li>
+                  <li className="about-label">Phone: 0912-144-381</li>
+                  <li className="about-label">Email: g01965250@gmail.com</li>
+                </ul>
               </div>
-              <ul className="about-label-wrapper">
-                <li className="about-label">Name: <span className="chinese">朱冠宇</span></li>
-                <li className="about-label">Birthday: July 22, 1993</li>
-                <li className="about-label">Age: 29 Years</li>
-                <li className="about-label">Adress:<span className="chinese"> 新竹,臺灣</span></li>
-                <li className="about-label">Phone: 0912-144-381</li>
-                <li className="about-label">Email: g01965250@gmail.com</li>
-              </ul>
-              <BsFillArrowDownSquareFill className="about-arrow"/>
+              <BsFillArrowDownSquareFill className="arrow"/>
             </div>
-            <div id="experience" className="education-wrapper">
-              <div className="education-title title-bottomLine">EXPERIENCE</div>
-              <ul>
-                <li>
-                  <div className="education-item">
-                    <h3>明新科技大學-電子工程系<span>( 2011 — 2016 )</span></h3>
-                    <p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </li>
-                <li>
-                  <div className="education-item">
-                    <h3>鴻佰科技股份有限公司-作業員<span>( 2021 — 2022 )</span></h3>
-                    <p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </li>
-                <li>
-                  <div className="education-item">
-                    <h3>海軍陸戰隊志願役士兵<span>( 2016 — 2020 )</span></h3>
-                    <p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </li>
-              </ul>
-              <BsFillArrowDownSquareFill className="education-arrow"/>
-            </div>
-            <div id="skill" className="skill-wrapper">
-              <div className="skill-title ">SKILL</div>
-                <div className="skill-bar-wrapper ">
-                  <div className="bar-style80">
-                    <div className="skill-bar">HTML5<span>80%</span></div>
-                  </div>
-                </div>
-                <div className="skill-bar-wrapper">
-                  <div className="bar-style77">
-                    <div className="skill-bar">CSS3<span>77%</span></div>
-                  </div>
-                 </div>
-                <div className="skill-bar-wrapper">
-                  <div className="bar-style70">
-                    <div className="skill-bar">JavaScript<span>70%</span></div>
-                  </div>
-                </div>
-                <div className="skill-bar-wrapper">
-                  <div className="bar-style65">
-                    <div className="skill-bar">React<span>65%</span></div>
-                  </div>
-                </div>
-                <div className="skill-bar-wrapper">
-                  <div className="bar-style60">
-                    <div className="skill-bar">Git<span>60%</span></div>
-                  </div>
-                </div>
-              <BsFillArrowDownSquareFill className="skill-arrow"/>
-            </div>
-            <div id="project" className="project-wrapper">
-              <div className="project-title-wrapper">
-                <div className="project-title title-bottomLine">PROJECT</div>
-                <div className="project-desc">Now, I’m working on a professional, visually sophisticated and technologically proficient, responsive and multi-functional wordpress theme Elonissa. If you are interested to work with me, click below button and contact with me right now, so we can talk about your project.              </div>
+            <div id="experience" className="education-wrapper  wrapper-bottomLine">
+              <div className="education-content">
+                <div className="education-title title-bottomLine">EXPERIENCE</div>
+                <ul>
+                  <li>
+                    <div className="education-item">
+                      <h3>鴻佰科技股份有限公司-作業員<span>( 2021 — 2022 )</span></h3>
+                        <p>人際關係：善於部門間的溝通與合作，與同仁關係良好。<br/>學習能力強：剛入職不久即可獨立完成工作項目，能短時間協助主管交辦事務或代理職務內容。</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="education-item">
+                      <h3>海軍陸戰隊志願役士兵<span>( 2016 — 2020 )</span></h3>
+                      <p>在軍中擔任通信士的位置。</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="education-item">
+                      <h3>私立明新科技大學－電子工程系<span>( 2011 — 2016 )</span></h3>
+                      <p></p>
+                    </div>
+                  </li>
+                </ul>
+                <BsFillArrowDownSquareFill className="arrow"/>
               </div>
-              <div className="project-list-wrapper">
-                <div className="project-list">
-                  <div className="project-list-title">Smashing Magazine Print</div>
-                  <div className="project-list-desc">illustration, design</div>
-                  <div className="project-list-image img1"></div>
+            </div>
+            <div id="skill" className="skill-wrapper  wrapper-bottomLine">
+              <div className="skill-content">
+                <div className="skill-title ">SKILL</div>
+                <div className="skill-box">
+                {/* <div class="tag-vertical discount"><FaHtml5/> & <FaCss3Alt/></div> */}
+                  {/* <div class="label-child"><FaHtml5/> & <FaCss3Alt/></div> */}
+                  <h2 className="skill-box-title">HTML & CSS</h2>
+                    <ul>
+                      <li>RWD</li>
+                      <li>熟悉HTML/CSS 語法</li> 
+                    </ul>
                 </div>
-                <div className="project-list project-list-left">
-                  <div className="project-list-image img2"></div>
-                  <div className="project-list-title">Revolution Book</div>
-                  <div className="project-list-desc">illustration, design</div>
+                <div className="skill-box">
+                  <h2 className="skill-box-title">JavaScript</h2>
+                  <p>熟悉 JavaScript 語法，並能夠解決基礎的邏輯與演算法問題 。</p>
                 </div>
-                <div className="project-list">
-                  <div className="project-list-title">Dreamers Logo</div>
-                  <div className="project-list-desc">illustration, design</div>
-                <div className="project-list-image img3"></div>
+                <div className="skill-box">
+                  <h2 className="skill-box-title">React</h2>
+                  <p>會使用基本的 React Hook。</p>
                 </div>
-                <div className="project-list project-list-left">
-                  <div className="project-list-image img4"></div>
-                  <div className="project-list-title">Reductive Design</div>
-                  <div className="project-list-desc">illustration, design</div>
+                <div className="skill-box">
+                  <h2 className="skill-box-title">Git</h2>
+                  <p></p>
                 </div>
               </div>
-              <BsFillArrowDownSquareFill className="project-arrow"/>
+              <BsFillArrowDownSquareFill className="arrow"/>
+            </div>
+            <div id="project" className="project-wrapper  wrapper-bottomLine">
+              <div className="project-content">
+                <div className="project-title-wrapper">
+                  <div className="project-title title-bottomLine">PROJECT</div>
+{/*                   <div className="project-desc">Now, I’m working on a professional, visually sophisticated and technologically proficient, responsive and multi-functional wordpress theme Elonissa. If you are interested to work with me, click below button and contact with me right now, so we can talk about your project.              </div> */}
+                </div>
+                <div className="project-list-wrapper">
+                  <div className="project-list">
+                    <div className="project-list-title">計算機</div>
+                    {/* <div className="project-list-desc">illustration, design</div> */}
+                    <a href="https://g01965250.github.io/calculater/"><div className="project-list-image img1"></div></a>
+                  </div>
+                  <div className="project-list project-list-left">
+                    <a href="https://g01965250.github.io/git-pomodoro/"><div className="project-list-image img2"></div></a>
+                    <div className="project-list-title">番茄鐘</div>
+                    {/* <div className="project-list-desc">illustration, design</div> */}
+                  </div>
+                  <div className="project-list">
+                    <div className="project-list-title">To-Do List</div>
+                    {/* <div className="project-list-desc">illustration, design</div> */}
+                    <a href="https://g01965250.github.io/todolist/"><div className="project-list-image img3"></div></a>
+                  </div>
+                  <div className="project-list project-list-left">
+                  <a href="https://g01965250.github.io/LineWeb/"><div className="project-list-image img4"></div></a>
+                    <div className="project-list-title">Line切版練習</div>
+                    {/* <div className="project-list-desc">illustration, design</div> */}
+                  </div>
+                </div>
+              </div> 
+              <BsFillArrowDownSquareFill className="arrow"/>
             </div>
             <div id="contact" className="contact-wrapper">
               <div className="contact-title title-bottomLine">CONTACT</div>
