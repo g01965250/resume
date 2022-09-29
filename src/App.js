@@ -50,7 +50,7 @@ function App() {
               <div className="about-content">
                 <div className="about-title-wrapper">
                   <div className="about-title title-bottomLine">ABOUT ME</div>
-                  <div className="about-dsec">熱愛學習新知，自學前端網頁設計半年左右的時間，熟悉HTML語法、CSS排版、JavaScript應用與撰寫、React框架運用，目前持續精進各項語言，朝著偉大的航道前進。</div>
+                  <div className="about-dsec">我是冠宇，來自桃園，現居新竹，畢業於明新科技大學電子工程系。自學前端設計半年經驗，平常會用HTML+CSS 練習刻版，JavaScript 則是上LeetCode 練習解題，React 有實作一些小專案。目前沒有相關的正職工作經驗，但我相信自己已經準備好進入該領域的職場，未來希望在短期能快速的進入工作軌道外，更能夠在公司的環境中成長，不論在前端的程式領域，或是任何面向挑戰都可以不斷的學習與精進。</div>
                 </div>
                 <ul className="about-label-wrapper">
                   <li className="about-label">Name: <span className="chinese">朱冠宇</span></li>
@@ -69,20 +69,21 @@ function App() {
                 <ul>
                   <li>
                     <div className="education-item">
-                      <h3>鴻佰科技股份有限公司-作業員<span>( 2021 — 2022 )</span></h3>
-                        <p>人際關係：善於部門間的溝通與合作，與同仁關係良好。<br/>學習能力強：剛入職不久即可獨立完成工作項目，能短時間協助主管交辦事務或代理職務內容。</p>
+                      <h3>鴻佰科技股份有限公司-作業員<span>( 2021 11月 — 2022 6月)</span></h3>
+                        <p>到職不久便能快速的掌握工作內容也受到主管的信賴，即可獨立完成工作項目。<br/>因為退伍後在求職方面還是有脫節，經朋友的推薦，便在下班之餘用空閒的時間學習前端相關技能。</p>
                     </div>
                   </li>
                   <li>
                     <div className="education-item">
-                      <h3>海軍陸戰隊志願役士兵<span>( 2016 — 2020 )</span></h3>
-                      <p>在軍中擔任通信士的位置。</p>
+                      <h3>海軍陸戰隊志願役士兵<span>( 2016 6月— 2020 6月)</span></h3>
+                      <p>在軍中擔任四年通信士的位置。<br/>
+                      剛入伍時覺得軍人是個不錯的職業，可以培養自律的生活及健康的身體，也可以學習到新的事物，就毅然決然的簽下了志願役，但後來發現軍中學習的技能有限，退伍後可以帶走的東西不多，就在役期結束時選擇退伍。</p>
                     </div>
                   </li>
                   <li>
                     <div className="education-item">
                       <h3>私立明新科技大學－電子工程系<span>( 2011 — 2016 )</span></h3>
-                      <p></p>
+                      <p>在學期間修過物件導向及WebApp 相關課程。</p>
                     </div>
                   </li>
                 </ul>
@@ -93,25 +94,47 @@ function App() {
               <div className="skill-content">
                 <div className="skill-title ">SKILL</div>
                 <div className="skill-box">
-                {/* <div class="tag-vertical discount"><FaHtml5/> & <FaCss3Alt/></div> */}
-                  {/* <div class="label-child"><FaHtml5/> & <FaCss3Alt/></div> */}
                   <h2 className="skill-box-title">HTML & CSS</h2>
                     <ul>
-                      <li>RWD</li>
                       <li>熟悉HTML/CSS 語法</li> 
+                      <li>掌握合適HTML 語意化標籤的使⽤</li> 
+                      <li>掌握使⽤CSS 語法美化網頁架構樣式並且會命名有意義的名稱，提高團隊維護便利性</li> 
+                      <li>了解CSS 權重</li> 
+                      <li>會使用CSS Flex進行排版</li> 
+                      <li>未來打算學習 CSS 的 grid transform animation tailwindcss...</li> 
                     </ul>
                 </div>
                 <div className="skill-box">
                   <h2 className="skill-box-title">JavaScript</h2>
-                  <p>熟悉 JavaScript 語法，並能夠解決基礎的邏輯與演算法問題 。</p>
+                    <ul>
+                      <li>了解基本的變數、型別、迴圈、判斷式</li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
                 </div>
                 <div className="skill-box">
                   <h2 className="skill-box-title">React</h2>
-                  <p>會使用基本的 React Hook。</p>
+                    <ul>
+                      <li>jsx</li>
+                      <li>hook</li> 
+                      <li>left cycle</li> 
+                    </ul>
                 </div>
                 <div className="skill-box">
-                  <h2 className="skill-box-title">Git</h2>
-                  <p></p>
+                  <h2 className="skill-box-title">Tools</h2>
+                    <lu>
+                     <li>Git & command line</li>
+                     <li>vscode</li>
+                     <li>node & npm </li>
+                     <li>Github</li>
+                     <li>trello</li>
+                     <li>Obsidian</li>
+                     <li>Google </li>
+                    </lu>
                 </div>
               </div>
               <BsFillArrowDownSquareFill className="arrow"/>
@@ -120,28 +143,27 @@ function App() {
               <div className="project-content">
                 <div className="project-title-wrapper">
                   <div className="project-title title-bottomLine">PROJECT</div>
-{/*                   <div className="project-desc">Now, I’m working on a professional, visually sophisticated and technologically proficient, responsive and multi-functional wordpress theme Elonissa. If you are interested to work with me, click below button and contact with me right now, so we can talk about your project.              </div> */}
                 </div>
                 <div className="project-list-wrapper">
                   <div className="project-list">
                     <div className="project-list-title">計算機</div>
-                    {/* <div className="project-list-desc">illustration, design</div> */}
+                    <div className="project-list-desc"></div>
                     <a href="https://g01965250.github.io/calculater/"><div className="project-list-image img1"></div></a>
                   </div>
                   <div className="project-list project-list-left">
                     <a href="https://g01965250.github.io/git-pomodoro/"><div className="project-list-image img2"></div></a>
                     <div className="project-list-title">番茄鐘</div>
-                    {/* <div className="project-list-desc">illustration, design</div> */}
+                    <div className="project-list-desc"></div>
                   </div>
                   <div className="project-list">
                     <div className="project-list-title">To-Do List</div>
-                    {/* <div className="project-list-desc">illustration, design</div> */}
+                    <div className="project-list-desc"></div>
                     <a href="https://g01965250.github.io/todolist/"><div className="project-list-image img3"></div></a>
                   </div>
                   <div className="project-list project-list-left">
                   <a href="https://g01965250.github.io/LineWeb/"><div className="project-list-image img4"></div></a>
                     <div className="project-list-title">Line切版練習</div>
-                    {/* <div className="project-list-desc">illustration, design</div> */}
+                    <div className="project-list-desc"></div>
                   </div>
                 </div>
               </div> 

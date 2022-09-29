@@ -187,8 +187,10 @@ display: flex;
 .about-dsec{
   font-size: 22px;
   font-weight: 400;
-  text-align: center;
   font-family: 'Noto Sans TC',sans-serif;
+  text-align: left;
+  text-indent: 2em;
+  letter-spacing: 0.8px;
 }
 .about-label-wrapper{
   list-style: none;
