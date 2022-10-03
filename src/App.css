@@ -6,6 +6,7 @@
 min-width: 1680px;
 /* max-width: 1680px; */
 display: flex;
+justify-content: center;
 }
 
 .sidebar-fix{
@@ -13,17 +14,28 @@ display: flex;
   height: 100vh;
 }
 .sidebar{
-  width: 340px;
-  padding: 110px 20px 130px;
-  margin: 0 20px;
+  width: 380px;
+  padding: 110px 40px 130px;
   box-sizing: border-box;
   position: fixed;
+  transition: all .5s ease-in;
+  left: 0;
+  z-index: 10;
+  background: #FFF;
+}
+.sidebar.collapse {
+  transform: translateX(-95%);
+}
+.sidebar.collapse + .content-wrapper {
+  margin: 0;
 }
 .sidebar-arrow{
   position: absolute;
   top: 0;
   left: 360px;
   font-size: 41px;
+  background-color: unset;
+  border: none;
 }
 .sidebar::after{
   content: "";
@@ -46,25 +58,29 @@ display: flex;
   text-align: center;
   margin: 85px 0 ;
 }
-.nav-wrapper ul a{
-  text-decoration: none;
+.nav-wrapper ul button{
   color: #000;
+  transition: all 0.2s ease;
 }
-.nav-btn{
+.nav-wrapper ul button:hover{
+  color: #ffcc0d;
+}
+.nav-btn button{
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
   line-height: 45px;
   margin-bottom: 3px;
+  background-color:unset;
+  border: none;
 }
 .nav-activ{
   background: #ffcc0d;
 }
 .social-wrapper{
-  width: 300px;
+  width: 260px;
   padding: 0 20px 0;
   border-top: 4px solid #000;
-  margin: 0px 0 0 -20px;
 }
 .social ul{
   padding: 130px 0;
@@ -75,17 +91,24 @@ display: flex;
   list-style: none;
 }
 .social ul a{
-  color: #000;
+  color: inherit;
   padding: 11.5px 12px 7.5px 12px;
 }
 .social li {
+  color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 17px;
   border: 2px solid #000;
   margin: 5px;
+  transition: all 0.2s ease;
 }
+.social li:hover{
+  color: #ffcc0d;
+  border-color: #ffcc0d;
+}
+
 .desc{
   font-size: 18px;
   font-weight: 500;
@@ -96,7 +119,8 @@ display: flex;
 
 .content-wrapper{
   width: calc(100% - 543px);
-  margin: 0 0 0 430px;
+  margin-left: 430px;
+  transition: all .5s ease-in;
 }
 .home-wrapper{
   padding: 200px 0 202px;
@@ -146,7 +170,7 @@ display: flex;
 .picture{
   width: 450px;
   height: 550px;
-  background: url(./image/about.jpg);
+  background-color: darkblue;
   background-size: cover;
   position: absolute;
   z-index: 3;
@@ -411,19 +435,26 @@ margin: 0 0 20px;
 .project-list-image{
   width: 570px;
   height: 570px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   filter: grayscale(1);
   border: 4px solid #ffcc07;
   border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:all 0.5s ease;
 }
-.project-list-image:hover{
+.project-list-image img {
+  transform: scale(1.5);
+  transition:all 0.5s ease;
+}
+.project-list-image:hover {
   filter:none;
-  background-size:contain ;
-  transform: scale(0.9,0.9);
-  transition:all 0.5s ease 0s
 }
+.project-list-image:hover img {
+  transform: scale(1.2);
+}
+
 .img1{
   background-image: url(./image/Calculator.jpg);
 }
@@ -465,7 +496,8 @@ margin: 0 0 20px;
   height: 70px;
   font-size: 22px;
   color: #000;
-  border: 2px solid;
+  border: 2px solid #000;
+  outline: none;
   padding: 0 30px 0;
   box-sizing: border-box;
   margin: 0 0 20px 20px;
@@ -486,6 +518,13 @@ margin: 0 0 20px;
   font-size: 18px;
   color: #000;
   font-weight: 600;
+  border: 2px solid #ffcc0d;
+  transition: all 0.3s ease;
+}
+.contact-btn-wrapper:hover{
+  color: #ffcc0d;
+  background: #fff;
+  cursor: pointer;
 }
 .contact-info{
   width: 800px;
@@ -548,3 +587,24 @@ font-family: 'Noto Sans TC', sans-serif;
   z-index: 1;
 }
   
+.input-container{
+  position: relative;
+  display: inline-block;
+}
+.input-container span{
+  position: absolute;
+  font-size: 22px;
+  left: 52px;
+  top: 22px;
+  transition: all 0.3s ease;
+}
+.input-container .contact-input:focus + span{
+  transform: translate(3px, -32px);
+  font-size: 18px;
+  background: #fff;
+  padding: 0 15px;
+  color: #ffcc0d;
+}
+.input-container .contact-input:focus{
+  border: 2px solid #ffcc07;
+}

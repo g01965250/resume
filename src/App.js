@@ -1,23 +1,34 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { FaTwitter,FaFacebookF ,FaInstagramSquare,FaGithub,FaYoutube,FaHtml5,FaCss3Alt} from "react-icons/fa";
 import { BsFillArrowLeftSquareFill,BsFillArrowDownSquareFill } from "react-icons/bs";
 import './App.css';
-
+import todopic from './image/todolist.jpg';
 function App() {
+  const [collapse, setCollapse] = useState(false);
+  const homeAnchor = useRef(null);
+  const aboutAnchor = useRef(null);
+  const experienceAnchor = useRef(null);
+  const skillAnchor = useRef(null);
+  const projectAnchor = useRef(null);
+  const contactAnchor = useRef(null);
+
+  console.log('homeAnchor', homeAnchor)
   return (
     <div className="App">
       <main className="main">
-        <div className="sidebar">
-          <BsFillArrowLeftSquareFill className="sidebar-arrow"/>
+        <div className={`sidebar ${collapse ? 'collapse' : ' '}`}>
+          <button className="sidebar-arrow" onClick={() => setCollapse(prev => !prev)}>
+            <BsFillArrowLeftSquareFill/>
+          </button>
           <nav className="nav-wrapper">
             <div className="nav-title">REWALL</div>
             <ul>
-              <li className="nav-btn nav-activ"><a href="#home" >HOME</a></li>
-              <li className="nav-btn"><a href="#about">ABOUT ME</a></li>
-              <li className="nav-btn"><a href="#experience">EXPERIENCE</a></li>
-              <li className="nav-btn"><a href="#skill">SKILL</a></li>
-              <li className="nav-btn"><a href="#project">PROJECT</a></li>
-              <li className="nav-btn"><a href="#contact">CONTACT</a></li>
+              <li className="nav-btn nav-activ"><button onClick={() => window.scrollTo({ behavior: 'smooth', top: homeAnchor?.current?.offsetTop})}>HOME</button></li>
+              <li className="nav-btn"><button onClick={() => window.scrollTo( { behavior:'smooth', top: aboutAnchor?.current?.offsetTop})}>ABOUT ME</button></li>
+              <li className="nav-btn"><button onClick={() => window.scrollTo( { behavior:'smooth', top: experienceAnchor?.current?.offsetTop})}>EXPERIENCE</button></li>
+              <li className="nav-btn"><button onClick={() => window.scrollTo( { behavior:'smooth', top: skillAnchor?.current?.offsetTop})}>SKILL</button></li>
+              <li className="nav-btn"><button onClick={() => window.scrollTo( { behavior:'smooth', top: projectAnchor?.current?.offsetTop})}>PROJECT</button></li>
+              <li className="nav-btn"><button onClick={() => window.scrollTo( { behavior:'smooth', top: contactAnchor?.current?.offsetTop})}>CONTACT</button></li>
             </ul>
           </nav>
           <div className="social-wrapper">
@@ -33,7 +44,7 @@ function App() {
           </div>
         </div>
         <div className="content-wrapper">
-            <div id="home" className="home-wrapper wrapper-bottomLine">
+            <div id="home" className="home-wrapper wrapper-bottomLine" ref={homeAnchor}>
               <div className="home-content">
                 <div className="picture-wrapper">
                   <div className="picture-border"></div>
@@ -46,7 +57,7 @@ function App() {
               </div>
               <BsFillArrowDownSquareFill className="arrow"/>
             </div>
-            <div id="about" className="about-wrapper wrapper-bottomLine">
+            <div id="about" className="about-wrapper wrapper-bottomLine" ref={aboutAnchor}>
               <div className="about-content">
                 <div className="about-title-wrapper">
                   <div className="about-title title-bottomLine">ABOUT ME</div>
@@ -63,7 +74,7 @@ function App() {
               </div>
               <BsFillArrowDownSquareFill className="arrow"/>
             </div>
-            <div id="experience" className="education-wrapper  wrapper-bottomLine">
+            <div id="experience" className="education-wrapper  wrapper-bottomLine" ref={experienceAnchor}>
               <div className="education-content">
                 <div className="education-title title-bottomLine">EXPERIENCE</div>
                 <ul>
@@ -90,7 +101,7 @@ function App() {
                 <BsFillArrowDownSquareFill className="arrow"/>
               </div>
             </div>
-            <div id="skill" className="skill-wrapper  wrapper-bottomLine">
+            <div id="skill" className="skill-wrapper  wrapper-bottomLine" ref={skillAnchor}>
               <div className="skill-content">
                 <div className="skill-title ">SKILL</div>
                 <div className="skill-box">
@@ -107,10 +118,10 @@ function App() {
                 <div className="skill-box">
                   <h2 className="skill-box-title">JavaScript</h2>
                     <ul>
-                      <li>了解基本的變數、型別、迴圈、判斷式</li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
+                      <li>了解基本的變數、型別</li>
+                      <li>了解for、while、do...while及for...of的應用</li>
+                      <li>了解break及continue的應用</li>
+                      <li>了解 if...else、switch及條件運算子</li>
                       <li></li>
                       <li></li>
                       <li></li>
@@ -126,7 +137,7 @@ function App() {
                 </div>
                 <div className="skill-box">
                   <h2 className="skill-box-title">Tools</h2>
-                    <lu>
+                    <ul>
                      <li>Git & command line</li>
                      <li>vscode</li>
                      <li>node & npm </li>
@@ -134,12 +145,12 @@ function App() {
                      <li>trello</li>
                      <li>Obsidian</li>
                      <li>Google </li>
-                    </lu>
+                    </ul>
                 </div>
               </div>
               <BsFillArrowDownSquareFill className="arrow"/>
             </div>
-            <div id="project" className="project-wrapper  wrapper-bottomLine">
+            <div id="project" className="project-wrapper  wrapper-bottomLine" ref={projectAnchor}>
               <div className="project-content">
                 <div className="project-title-wrapper">
                   <div className="project-title title-bottomLine">PROJECT</div>
@@ -158,7 +169,11 @@ function App() {
                   <div className="project-list">
                     <div className="project-list-title">To-Do List</div>
                     <div className="project-list-desc"></div>
-                    <a href="https://g01965250.github.io/todolist/"><div className="project-list-image img3"></div></a>
+                    <div className="project-list-image">
+                      <a href="https://g01965250.github.io/todolist/">
+                        <img src={todopic}/>
+                      </a>
+                    </div>
                   </div>
                   <div className="project-list project-list-left">
                   <a href="https://g01965250.github.io/LineWeb/"><div className="project-list-image img4"></div></a>
@@ -169,15 +184,28 @@ function App() {
               </div> 
               <BsFillArrowDownSquareFill className="arrow"/>
             </div>
-            <div id="contact" className="contact-wrapper">
+            <div id="contact" className="contact-wrapper" ref={contactAnchor}>
               <div className="contact-title title-bottomLine">CONTACT</div>
-              <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/xoqbdeey" method="post">
+              <form id="fs-frm" name="complaint-form" acceptCharset="utf-8" action="https://formspree.io/f/xoqbdeey" method="post">
                 <fieldset id="fs-frm-inputs" className="frm-inputs">
-                  <input type="text" name="name"  placeholder="Name *" required="" className="contact-input"/>
-                  <input type="email" name="_replyto"  placeholder="Email *" required=""className="contact-input"/>
-                  <input type="tel"  minlength="9" maxlength="10" name="telephone"  placeholder="Phone" className="contact-input phone"/>
-                  <textarea name="complaint"  placeholder="Message" required="" className="contact-input message"></textarea>
-                  <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission"/>
+                  <div className="input-container">
+                    <input type="text" name="name" required="" className="contact-input"/>
+                    <span>Name *</span>
+                  </div>
+                  <div className="input-container">
+                    <input type="email" name="_replyto" required=""className="contact-input"/>
+                    <span>Email *</span>
+                  </div>
+                  <div className="input-container">
+                    <input type="tel"  minLength="9" maxLength="10" name="telephone"  className="contact-input phone"/>
+                    <span>Phone</span>
+                  </div>
+                  <div className="input-container">
+                    <textarea name="complaint"   required="" className="contact-input message">
+                    </textarea>
+                    <span>Message</span>
+                    <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission"/>
+                  </div>
                   <input type="submit" value="SEND MESSAGE" className="contact-btn-wrapper" />
                 </fieldset>
               </form>
