@@ -18,10 +18,13 @@ function App() {
   const projectAnchor = useRef(null);
   const contactAnchor = useRef(null);
   const [active, setActive] = useState(0);
+  // eslint-disable-next-line no-console
   console.log('win', window.scrollY);
 
+  // eslint-disable-next-line func-names
   const handleScroll = function () {
     const { scrollY } = window;
+    // eslint-disable-next-line no-console
     console.log(scrollY);
     if (scrollY >= 0 && scrollY <= 1055) {
       setActive(0);
@@ -41,6 +44,7 @@ function App() {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     handleScroll();
+    // eslint-disable-next-line no-console
     console.log('winnn', window.scrollY);
     return () => {
       window.removeEventListener('scroll', handleScroll);
