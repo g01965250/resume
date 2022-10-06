@@ -36,6 +36,7 @@ justify-content: center;
   font-size: 41px;
   background-color: unset;
   border: none;
+  cursor: pointer;
 }
 .sidebar::after{
   content: "";
@@ -62,21 +63,31 @@ justify-content: center;
   color: #000;
   transition: all 0.2s ease;
 }
-.nav-wrapper ul button:hover{
+.nav-wrapper ul .nav-btn button:hover{
   color: #ffcc0d;
+}
+.nav-wrapper ul .nav-active button:hover{
+  color: #000;
+}
+.nav-btn{
+  margin-bottom: 3px;
+  cursor: pointer;
 }
 .nav-btn button{
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
   line-height: 45px;
-  margin-bottom: 3px;
   background-color:unset;
   border: none;
+  cursor: pointer;
+  width: 100%;
 }
-.nav-activ{
+.nav-active{
   background: #ffcc0d;
 }
+
+
 .social-wrapper{
   width: 260px;
   padding: 0 20px 0;
@@ -452,7 +463,7 @@ margin: 0 0 20px;
   filter:none;
 }
 .project-list-image:hover img {
-  transform: scale(1.2);
+  transform: scale(0.8);
 }
 
 .img1{
@@ -580,11 +591,13 @@ font-family: 'Noto Sans TC', sans-serif;
 .arrow{
   font-size: 40px;
   position: absolute;
-  bottom: -25px;
+  bottom: -30px;
   right: 0;
   padding: 0 0 0 20px;
   background: #fff;
   z-index: 1;
+  border: 0;
+  cursor: pointer;
 }
   
 .input-container{
