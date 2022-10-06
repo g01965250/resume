@@ -10,13 +10,13 @@ import pomodoropic from './image/Pomodoro.jpg';
 import linepic from './image/line.jpg';
 
 function App() {
-  const [collapse, setCollapse] = useState(false);
   const homeAnchor = useRef(null);
   const aboutAnchor = useRef(null);
   const experienceAnchor = useRef(null);
   const skillAnchor = useRef(null);
   const projectAnchor = useRef(null);
   const contactAnchor = useRef(null);
+  const [collapse, setCollapse] = useState(false);
   const [active, setActive] = useState(0);
   // eslint-disable-next-line no-console
   console.log('win', window.scrollY);
@@ -36,7 +36,7 @@ function App() {
       setActive(3);
     } else if (scrollY >= 5182 && scrollY <= 7039) {
       setActive(4);
-    } else if (scrollY >= 7040 && scrollY <= 7749) {
+    } else if (scrollY >= 7040) {
       setActive(5);
     }
   };
@@ -44,26 +44,10 @@ function App() {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     handleScroll();
-    // eslint-disable-next-line no-console
-    console.log('winnn', window.scrollY);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   });
-
-  /*   if (window.scrollY >= 1056 && window.scrollY <= 2100) {
-    setActive(3);
-  } */
-  /*
-  useEffect (){
-  } */
-  /* const update = () => {
-    const elem = document.getElementById('home');
-    const rect = elem.getBoundingClientRect();
-    console.log('about', rect);
-  };
-  document.addEventListener('scroll', update);
-  update(); */
 
   // eslint-disable-next-line no-console
   console.log('homeAnchor', homeAnchor);
@@ -81,7 +65,6 @@ function App() {
                 <button
                   type="button"
                   onClick={() => {
-                    setActive(0);
                     window.scrollTo({ behavior: 'smooth', top: homeAnchor?.current?.offsetTop });
                   }}
                 >
@@ -92,7 +75,6 @@ function App() {
                 <button
                   type="button"
                   onClick={() => {
-                    setActive(1);
                     window.scrollTo({ behavior: 'smooth', top: aboutAnchor?.current?.offsetTop });
                   }}
                 >
@@ -103,7 +85,6 @@ function App() {
                 <button
                   type="button"
                   onClick={() => {
-                    setActive(2);
                     window.scrollTo({ behavior: 'smooth', top: experienceAnchor?.current?.offsetTop });
                   }}
                 >
@@ -114,7 +95,6 @@ function App() {
                 <button
                   type="button"
                   onClick={() => {
-                    setActive(3);
                     window.scrollTo({ behavior: 'smooth', top: skillAnchor?.current?.offsetTop });
                   }}
                 >
@@ -125,7 +105,6 @@ function App() {
                 <button
                   type="button"
                   onClick={() => {
-                    setActive(4);
                     window.scrollTo({ behavior: 'smooth', top: projectAnchor?.current?.offsetTop });
                   }}
                 >
@@ -136,7 +115,6 @@ function App() {
                 <button
                   type="button"
                   onClick={() => {
-                    setActive(5);
                     window.scrollTo({ behavior: 'smooth', top: contactAnchor?.current?.offsetTop });
                   }}
                 >
