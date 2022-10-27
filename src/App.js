@@ -4,7 +4,7 @@ import Sidebar from './component/Sidebar';
 import Home from './component/Home';
 import About from './component/About';
 import Experience from './component/Experience';
-import Skill from './component/Sikll';
+import Skill from './component/Skill';
 import Project from './component/Project';
 import Contact from './component/Contact';
 

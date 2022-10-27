@@ -33,7 +33,7 @@ function Skill({ skillAnchor, projectAnchor }) {
           <div className="skill-box">
             <h2 className="skill-box-title">React</h2>
             <ul>
-              <li>jsx</li>
+              <li>了解元件化觀念</li>
               <li>了解Function Component 與 Class Component</li>
               <li>left cycle</li>
             </ul>
@@ -41,14 +41,9 @@ function Skill({ skillAnchor, projectAnchor }) {
           <div className="skill-box">
             <h2 className="skill-box-title">Tools</h2>
             <ul>
-              <li>Git & command line</li>
-              <li>vscode</li>
-              <li>ESLint</li>
-              <li>node & npm </li>
-              <li>Github</li>
-              <li>trello</li>
-              <li>Obsidian</li>
-              <li>Google </li>
+              <li>版本控制 : Git 、 Github </li>
+              <li>開發工具 : VSCode 、 ESLint 、 node 、 npm </li>
+              <li>學習筆記 : Obsidian </li>
             </ul>
           </div>
         </div>
