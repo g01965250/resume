@@ -1,3 +1,5 @@
+const { any } = require('prop-types');
+
 module.exports = {
   env: {
     browser: true,
@@ -17,5 +19,6 @@ module.exports = {
   ],
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/forbid-prop-types': [0, { forbid: [any], checkContextTypes: true, checkChildContextTypes: true }],
   },
 };

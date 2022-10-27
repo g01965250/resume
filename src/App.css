@@ -181,7 +181,7 @@ justify-content: center;
 .picture{
   width: 450px;
   height: 550px;
-  background-color: darkblue;
+  background: url(./image/me.jpg);
   background-size: cover;
   position: absolute;
   z-index: 3;
@@ -456,7 +456,7 @@ margin: 0 0 20px;
   transition:all 0.5s ease;
 }
 .project-list-image img {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition:all 0.5s ease;
 }
 .project-list-image:hover {
@@ -558,48 +558,7 @@ margin: 0 0 20px;
   font-weight: 400;
   color: #000;
   text-decoration-color: #ffcc0d;
-}
-
-.chinese{
-font-family: 'Noto Sans TC', sans-serif;
-}
-.title-bottomLine{
-  position: relative;
-}
-.title-bottomLine::after{
-  content: " ";
-  width: 200px;
-  height: 10px;
-  background-color: #000;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.wrapper-bottomLine{
-  position: relative;
-}
-.wrapper-bottomLine::after{
-  content: " ";
-  width: 100%;
-  height: 4px;
-  background-color: #000;
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-}
-.arrow{
-  font-size: 40px;
-  position: absolute;
-  bottom: -30px;
-  right: 0;
-  padding: 0 0 0 20px;
-  background: #fff;
-  z-index: 1;
-  border: 0;
-  cursor: pointer;
-}
-  
+} 
 .input-container{
   position: relative;
   display: inline-block;
@@ -611,13 +570,60 @@ font-family: 'Noto Sans TC', sans-serif;
   top: 22px;
   transition: all 0.3s ease;
 }
-.input-container .contact-input:focus + span{
+.input-container .contact-input:focus + span,.input-container .contact-input:not(:placeholder-shown) + span{
   transform: translate(3px, -32px);
   font-size: 18px;
   background: #fff;
   padding: 0 15px;
   color: #ffcc0d;
 }
+.input-container .contact-input:not(:placeholder-shown):focus + span {
+  color: #ffcc0d;
+}
+.input-container .contact-input:not(:placeholder-shown) + span {
+  color: #000;
+}
 .input-container .contact-input:focus{
   border: 2px solid #ffcc07;
 }
+
+
+.chinese{
+  font-family: 'Noto Sans TC', sans-serif;
+  }
+  .title-bottomLine{
+    position: relative;
+  }
+  .title-bottomLine::after{
+    content: " ";
+    width: 200px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .wrapper-bottomLine{
+    position: relative;
+  }
+  .wrapper-bottomLine::after{
+    content: " ";
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+  }
+  .arrow{
+    font-size: 40px;
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    padding: 0 0 0 20px;
+    background: #fff;
+    z-index: 1;
+    border: 0;
+    cursor: pointer;
+  }
