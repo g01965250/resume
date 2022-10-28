@@ -185,6 +185,7 @@ justify-content: center;
   z-index: 3;
   top: 0px;
   left: 64px;
+  background-position: top;
 }
 .picture-background{
   width: 550px;
@@ -441,6 +442,7 @@ margin: 0 0 20px;
   padding: 10px;
   border-radius: 15px ;
   display: none;
+  font-family:Noto Sans TC,sans-serif;
 }
 .exclamationIcon-wrapper:hover .project-exclamation-wrapper{
   display: block;
