@@ -35,7 +35,7 @@ function Skill({ skillAnchor, projectAnchor }) {
             <ul>
               <li>了解元件化觀念</li>
               <li>了解Function Component 與 Class Component</li>
-              <li>left cycle</li>
+              <li>Hook JSX proptype ...</li>
             </ul>
           </div>
           <div className="skill-box">
