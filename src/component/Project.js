@@ -50,11 +50,12 @@ function Project({ projectAnchor, contactAnchor }) {
                   <BsExclamationOctagon className="exclamationIcon" />
                   <div className="project-exclamation-wrapper">
                     <p>
-                      簡介：使我們可以用最高強度專注在一件事情上25分鐘，
-                      例如看書、思考或各種工作任務；
-                      然後讓自己精神放鬆5分鐘。一直重複這個循環，可以讓自己抓緊時間並維持最高專注力。
+                      結合 Todo List
+                      的番茄鐘計時器，使用者可新增待辦事項並選擇當前任務，搭配
+                      25 分鐘倒數計時專注完成。
                       <br />
-                      使用技術：將ToDoList搭配倒數計時
+                      使用技術：React、useState、useEffect、元件化架構
+                      部署：Vercel
                     </p>
                   </div>
                 </div>
