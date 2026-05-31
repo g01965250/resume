@@ -5,40 +5,51 @@ import { BsFillArrowDownSquareFill } from 'react-icons/bs';
 function Experience({ experienceAnchor, skillAnchor }) {
   return (
     <div>
-      <div id="experience" className="education-wrapper  wrapper-bottomLine" ref={experienceAnchor}>
-        <div className="education-content">
-          <div className="education-title title-bottomLine">EXPERIENCE</div>
+      <div
+        id="experience"
+        className="section-wrapper  wrapper-bottomLine"
+        ref={experienceAnchor}
+      >
+        <div className="section-content edu-content">
+          <div className="section-title title-bottomLine">EXPERIENCE</div>
           <ul>
             <li>
-              <div className="education-item">
+              <div className="card-item">
                 <h3>
-                  鴻佰科技股份有限公司-作業員
+                  兆赫電子股份有限公司－SMT 技術師
+                  <span>( 2022 年 11 月 — 至今)</span>
+                </h3>
+                <p>
+                  負責 SMT 產線操作與機台日常維護，並處理製程異常排查。接收 RD
+                  提供的電路圖、CAD 檔及 BOM 表，使用 GC-PowerPlace 合併後匯入
+                  JUKI HLC 編譯為貼片程式與料站表，並分別匯入 SPI 及 Omron VT-S
+                  編寫檢測程式供後續製程使用。任職期間獨立開發自動化工具，將 HLC
+                  輸出的料站表自動整理為統一格式，大幅減少人工調整時間。
+                </p>
+              </div>
+            </li>
+            <li>
+              <div className="card-item">
+                <h3>
+                  鴻佰科技股份有限公司－生產線作業員
                   <span>( 2021 11月 — 2022 6月)</span>
                 </h3>
                 <p>
-                  到職不久便能快速的掌握工作內容也受到主管的信賴，即可獨立完成工作項目。
-                  <br />
-                  因為退伍後在求職方面還是有脫節，經朋友的推薦，便在下班之餘用空閒的時間學習前端相關技能。
+                  負責生產線作業，到職後迅速掌握工作流程並獨立執行工作項目。
                 </p>
               </div>
             </li>
             <li>
-              <div className="education-item">
+              <div className="card-item">
                 <h3>
                   海軍陸戰隊志願役士兵
-                  <span>( 2016 6月— 2020 6月)</span>
+                  <span>( 2016 6月 — 2020 6月)</span>
                 </h3>
-                <p>
-                  在軍中擔任四年通信士的位置。
-                  <br />
-                  剛入伍時覺得軍人是個不錯的職業，可以培養自律的生活及健康的身體，
-                  也可以學習到新的事物，就毅然決然的簽下了志願役，但後來發現軍中學習的技能有限，
-                  退伍後可以帶走的東西不多，就在役期結束時選擇退伍。
-                </p>
+                <p>擔任通信士，服役四年後退伍。</p>
               </div>
             </li>
             <li>
-              <div className="education-item">
+              <div className="card-item">
                 <h3>
                   私立明新科技大學－電子工程系
                   <span>( 2011 — 2016 )</span>

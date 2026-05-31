@@ -6,44 +6,46 @@ import { BsFillArrowDownSquareFill } from 'react-icons/bs';
 function Skill({ skillAnchor, projectAnchor }) {
   return (
     <div>
-      <div id="skill" className="skill-wrapper  wrapper-bottomLine" ref={skillAnchor}>
-        <div className="skill-content">
-          <div className="skill-title ">SKILL</div>
+      <div
+        id="skill"
+        className="section-wrapper  wrapper-bottomLine"
+        ref={skillAnchor}
+      >
+        <div className="section-content">
+          <div className="section-title">SKILL</div>
           <div className="skill-box">
             <h2 className="skill-box-title">HTML & CSS</h2>
             <ul>
-              <li>熟悉HTML/CSS 語法</li>
-              <li>掌握合適HTML 語意化標籤的使⽤</li>
-              <li>掌握使⽤CSS 語法美化網頁架構樣式並且會命名有意義的名稱，提高團隊維護便利性</li>
-              <li>了解CSS 權重</li>
-              <li>會使用CSS Flex進行排版</li>
-              <li>未來打算學習 CSS 的 grid transform animation tailwindcss...</li>
+              <li>熟悉 HTML 語意化標籤的使用</li>
+              <li>能以有意義的命名撰寫 CSS，提高維護性</li>
+              <li>了解 CSS 權重規則</li>
+              <li>使用 Flexbox 進行響應式排版</li>
             </ul>
           </div>
           <div className="skill-box">
             <h2 className="skill-box-title">JavaScript</h2>
             <ul>
-              <li>了解基本的變數、型別</li>
-              <li>了解for、while、do...while及for...of的應用</li>
-              <li>了解break及continue的應用</li>
-              <li>了解 if...else、switch及條件運算子</li>
-              <li>了解Array方法及應用</li>
+              <li>了解 callback、Promise 與 async/await 非同步處理</li>
+              <li>使用 fetch 串接 RESTful API</li>
+              <li>了解閉包（closure）概念</li>
+              <li>熟悉陣列方法 map、filter、reduce 的應用</li>
             </ul>
           </div>
           <div className="skill-box">
             <h2 className="skill-box-title">React</h2>
             <ul>
-              <li>了解元件化觀念</li>
-              <li>了解Function Component 與 Class Component</li>
-              <li>Hook JSX proptype ...</li>
+              <li>使用 Function Component 搭配 Hooks 開發</li>
+              <li>熟悉 useState、useEffect 管理元件狀態與副作用</li>
+              <li>具備封裝自定義 Hook 的經驗</li>
+              <li>使用 React Router 實作前端路由</li>
             </ul>
           </div>
           <div className="skill-box">
             <h2 className="skill-box-title">Tools</h2>
             <ul>
-              <li>版本控制 : Git 、 Github </li>
-              <li>開發工具 : VSCode 、 ESLint 、 node 、 npm </li>
-              <li>學習筆記 : Obsidian </li>
+              <li>版本控制：Git、GitHub</li>
+              <li>開發工具：VSCode、ESLint、Node.js、npm</li>
+              <li>學習筆記：Obsidian</li>
             </ul>
           </div>
         </div>

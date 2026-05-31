@@ -16,6 +16,7 @@ function App() {
   const projectAnchor = useRef(null);
   const contactAnchor = useRef(null);
   const [active, setActive] = useState(0);
+  const [collapse, setCollapse] = useState(false);
 
   const handleScroll = function () {
     const { scrollY } = window;
@@ -52,8 +53,10 @@ function App() {
           projectAnchor={projectAnchor}
           contactAnchor={contactAnchor}
           active={active}
+          collapse={collapse}
+          setCollapse={setCollapse}
         />
-        <div className="content-wrapper">
+        <div className={`content-wrapper ${collapse ? 'collapse' : ' '} `}>
           <Home
             homeAnchor={homeAnchor}
             aboutAnchor={aboutAnchor?.current?.offsetTop}
@@ -74,9 +77,7 @@ function App() {
             projectAnchor={projectAnchor}
             contactAnchor={contactAnchor?.current?.offsetTop}
           />
-          <Contact
-            contactAnchor={contactAnchor}
-          />
+          <Contact contactAnchor={contactAnchor} />
         </div>
       </main>
     </div>

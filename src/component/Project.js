@@ -1,21 +1,28 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import { BsFillArrowDownSquareFill, BsExclamationOctagon } from 'react-icons/bs';
-import todopic from '../image/todolist.jpg';
-import calculaterpic from '../image/Calculator.jpg';
+import {
+  BsFillArrowDownSquareFill,
+  BsExclamationOctagon,
+} from 'react-icons/bs';
+/* import todopic from '../image/todolist.jpg'; */
+/* import calculaterpic from '../image/Calculator.jpg'; */
 import pomodoropic from '../image/Pomodoro.jpg';
-import linepic from '../image/line.jpg';
+/* import linepic from '../image/line.jpg'; */
 
 function Project({ projectAnchor, contactAnchor }) {
   return (
     <div>
-      <div id="project" className="project-wrapper  wrapper-bottomLine" ref={projectAnchor}>
-        <div className="project-content">
+      <div
+        id="project"
+        className="section-wrapper  wrapper-bottomLine"
+        ref={projectAnchor}
+      >
+        <div className="section-content">
           <div className="project-title-wrapper">
-            <div className="project-title title-bottomLine">PROJECT</div>
+            <div className="section-title title-bottomLine">PROJECT</div>
           </div>
           <div className="project-list-wrapper">
-            <div className="project-list">
+            {/* <div className="project-list">
               <div className="project-list-title">計算機</div>
               <div className="project-list-desc" />
               <div className="project-list-image">
@@ -27,12 +34,13 @@ function Project({ projectAnchor, contactAnchor }) {
                   <div className="project-exclamation-wrapper">
                     <p>
                       簡介：一個標準的計算機。
-                      原本透過畫面按鈕進行計算，後面研究透過 Rract事件監聽增加使用鍵盤控制。
+                      原本透過畫面按鈕進行計算，後面研究透過
+                      Rract事件監聽增加使用鍵盤控制。
                     </p>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="project-list project-list-left">
               <div className="project-list-image">
                 <a href="https://g01965250.github.io/git-pomodoro/">
@@ -54,7 +62,7 @@ function Project({ projectAnchor, contactAnchor }) {
               <div className="project-list-title">番茄鐘</div>
               <div className="project-list-desc" />
             </div>
-            <div className="project-list">
+            {/* <div className="project-list">
               <div className="project-list-title">To-Do List</div>
               <div className="project-list-desc" />
               <div className="project-list-image">
@@ -83,7 +91,7 @@ function Project({ projectAnchor, contactAnchor }) {
               </div>
               <div className="project-list-title">Line切版練習</div>
               <div className="project-list-desc" />
-            </div>
+            </div> */}
           </div>
         </div>
         <button

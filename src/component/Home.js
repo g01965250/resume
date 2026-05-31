@@ -5,7 +5,11 @@ import { BsFillArrowDownSquareFill } from 'react-icons/bs';
 function Home({ homeAnchor, aboutAnchor }) {
   return (
     <div>
-      <div id="home" className="home-wrapper wrapper-bottomLine" ref={homeAnchor}>
+      <div
+        id="home"
+        className="home-wrapper wrapper-bottomLine"
+        ref={homeAnchor}
+      >
         <div className="home-content">
           <div className="picture-wrapper">
             <div className="picture-border" />
@@ -16,10 +20,9 @@ function Home({ homeAnchor, aboutAnchor }) {
             <div className="home-title">
               Hello,
               <br />
-              I&apos;m 冠宇
-              {' '}
+              I&apos;m Orton
               <br />
-              A Frontend Developer Beginner
+              <span> A Frontend Developer</span>
             </div>
           </div>
         </div>
@@ -27,7 +30,10 @@ function Home({ homeAnchor, aboutAnchor }) {
           type="button"
           className="arrow"
           onClick={() => {
-            window.scrollTo({ behavior: 'smooth', top: aboutAnchor?.current?.offsetTop });
+            window.scrollTo({
+              behavior: 'smooth',
+              top: aboutAnchor?.current?.offsetTop,
+            });
           }}
         >
           <BsFillArrowDownSquareFill />

@@ -5,22 +5,30 @@ import { BsFillArrowDownSquareFill } from 'react-icons/bs';
 function About({ aboutAnchor, experienceAnchor }) {
   return (
     <div>
-      <div id="about" className="about-wrapper wrapper-bottomLine" ref={aboutAnchor}>
-        <div className="about-content">
+      <div
+        id="about"
+        className="section-wrapper wrapper-bottomLine"
+        ref={aboutAnchor}
+      >
+        <div className="section-content">
           <div className="about-title-wrapper">
-            <div className="about-title title-bottomLine">ABOUT ME</div>
-            <div className="about-dsec">我是冠宇，來自桃園，現居新竹，畢業於明新科技大學電子工程系。自學前端設計半年經驗，平常會用HTML+CSS 練習刻版，JavaScript 則是上LeetCode 練習解題，React 有實作一些小專案。目前沒有相關的正職工作經驗，但我相信自己已經準備好進入該領域的職場，未來希望在短期能快速的進入工作軌道外，更能夠在公司的環境中成長，不論在前端的程式領域，或是任何面向挑戰都會不斷的學習與精進。</div>
+            <div className="section-title title-bottomLine">ABOUT ME</div>
+            <div className="about-desc">
+              我是冠宇，畢業於明新科技大學電子工程系，目前在兆赫電子擔任 SMT
+              技術師。在職期間，我獨立開發了一套自動化工具，將原本需要人工處理的
+              BOM/CAD
+              檔案合併流程寫成程式自動完成——那個解決問題的過程，讓我確認自己真正喜歡的是用程式碼讓事情變得更好，也成為我投入前端開發的直接動機。現在我正全力學習
+              React
+              與現代前端開發，目標是成為一名能夠獨立開發、持續精進的前端工程師。
+            </div>
           </div>
           <ul className="about-label-wrapper">
             <li className="about-label">
               Name:
-              {' '}
               <span className="chinese">朱冠宇</span>
             </li>
-            <li className="about-label">Birthday: July 22, 1993</li>
-            <li className="about-label">Age: 29 Years</li>
             <li className="about-label">
-              Adress:
+              Address:
               <span className="chinese"> 新竹,臺灣</span>
             </li>
             <li className="about-label">Phone: 0912-144-381</li>
