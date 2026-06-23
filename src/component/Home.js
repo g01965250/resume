@@ -32,7 +32,7 @@ function Home({ homeAnchor, aboutAnchor }) {
           onClick={() => {
             window.scrollTo({
               behavior: 'smooth',
-              top: aboutAnchor?.current?.offsetTop,
+              top: aboutAnchor,
             });
           }}
         >
