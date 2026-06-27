@@ -189,8 +189,8 @@ body {
    Section 共用樣式（消除大量重複）
    ========================================== */
 .section-wrapper {
-  padding: 200px 0;
-  border-bottom: var(--border);
+  padding: 150px 20px 150px 0;
+  /* border-bottom: var(--border); */
   margin: 0 auto 20px;
 }
 
@@ -233,6 +233,7 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .home-title-wrapper {
@@ -296,7 +297,7 @@ body {
    About
    ========================================== */
 .about-title-wrapper {
-  margin: 0 52px 52px;
+  margin: 0 0px 52px 0;
 }
 
 .about-desc {
@@ -320,7 +321,7 @@ body {
   font-weight: 400;
   line-height: 41px;
   padding: 7px 26px;
-  margin: 0 30px 30px 0;
+  margin: 0 20px 30px 0;
   border: 4px solid #444;
   background: var(--gray-bg);
 }
@@ -342,7 +343,7 @@ body {
 .card-item {
   background: var(--gray-bg);
   padding: 52px 50px 53px;
-  margin: 0 30px 20px 0;
+  margin: 0 0px 20px 0;
 }
 
 .card-item h3 {
@@ -386,7 +387,7 @@ body {
   max-width: 800px;
   background: var(--gray-bg);
   padding: 0 50px;
-  margin: 0 30px 50px 0;
+  margin: 0 0px 50px 0;
   /*  position: relative; */
 }
 .skill-box-border-bottom {
@@ -541,32 +542,48 @@ body {
 /* ==========================================
    Contact
    ========================================== */
+
+#contact.section-wrapper {
+  padding-bottom: 0px;
+}
 .contact-wrapper {
   padding: 171px 0 0;
   margin: 0 auto 20px;
 }
 
-.frm-inputs {
-  width: 800px;
+.form-wrapper {
+  max-width: 800px;
   margin: 0 auto;
-  border: 0;
 }
-
+.frm-inputs {
+  display: flex;
+  max-width: 800px;
+  gap: 16px;
+  flex-wrap: wrap;
+  border: none;
+}
+.input-container:nth-child(1),
+.input-container:nth-child(2) {
+  width: calc(50% - 8px);
+}
+.input-container:nth-child(3),
+.input-container:nth-child(4) {
+  width: 100%;
+}
 .contact-input {
-  width: 390px;
+  width: 100%;
   height: 70px;
   font-size: 22px;
   color: var(--black);
   border: 2px solid var(--black);
   outline: none;
   padding: 0 30px;
-  margin: 0 0 20px 20px;
 }
 
-.phone,
+/* .phone,
 .message {
-  width: 800px;
-}
+  width: 100%;
+} */
 
 .message {
   height: 200px;
@@ -574,9 +591,8 @@ body {
 }
 
 .contact-btn-wrapper {
-  width: 800px;
+  width: 100%;
   height: 70px;
-  margin: 0 0 0 20px;
   font-size: 18px;
   font-weight: 600;
   color: var(--black);
@@ -592,8 +608,8 @@ body {
 }
 
 .contact-info {
-  width: 800px;
-  margin: 86px auto;
+  width: 100%;
+  margin: 86px auto 40px;
   text-align: center;
 }
 
@@ -695,6 +711,9 @@ body {
   cursor: pointer;
   z-index: 1;
 }
+/* ==========================================
+   RWD — Mobile (< 1375px)
+   ========================================== */
 
 @media (max-width: 1375px) {
   .picture-border {
@@ -707,11 +726,10 @@ body {
     width: 30vw;
     height: 40vw;
     left: 0;
-    position: relative;
+    position: unset;
   }
   .picture-wrapper {
-    top: 0;
-    left: 0;
+    position: unset;
   }
   .home-title {
     margin: 0 auto;
@@ -722,11 +740,20 @@ body {
     justify-content: center;
   } */
 }
+/* ==========================================
+   RWD — Mobile (< 1000px)
+   ========================================== */
+@media (max-width: 1000px) {
+  .input-container:nth-child(1),
+  .input-container:nth-child(2) {
+    width: 100%;
+  }
+}
 
 /* ==========================================
-   RWD — Mobile (< 768px)
+   RWD — Mobile (< 920px)
    ========================================== */
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   /* Sidebar 變 fixed overlay */
   .sidebar-wrapper {
     position: fixed;
