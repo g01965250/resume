@@ -20,17 +20,17 @@ function App() {
 
   const handleScroll = function () {
     const { scrollY } = window;
-    if (scrollY >= 0 && scrollY <= 1055) {
+    if (scrollY >= 0 && scrollY <= 949) {
       setActive(0);
-    } else if (scrollY >= 1056 && scrollY <= 2099) {
+    } else if (scrollY >= 950 && scrollY <= 1771) {
       setActive(1);
-    } else if (scrollY >= 2100 && scrollY <= 3410) {
+    } else if (scrollY >= 1772 && scrollY <= 3088) {
       setActive(2);
-    } else if (scrollY >= 3411 && scrollY <= 5181) {
+    } else if (scrollY >= 3089 && scrollY <= 4770) {
       setActive(3);
-    } else if (scrollY >= 5182 && scrollY <= 7039) {
+    } else if (scrollY >= 4771 && scrollY <= 5990) {
       setActive(4);
-    } else if (scrollY >= 7040) {
+    } else if (scrollY >= 5991) {
       setActive(5);
     }
   };
