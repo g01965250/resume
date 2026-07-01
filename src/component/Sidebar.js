@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import {
   BsFillArrowLeftSquareFill,
   BsFillArrowRightSquareFill,
@@ -154,19 +154,20 @@ function Sidebar({
           </div>
         </div>
       </div>
-      ;
     </div>
   );
 }
 
 Sidebar.propTypes = {
-  aboutAnchor: propTypes.shape({ current: propTypes.any }),
-  experienceAnchor: propTypes.shape({ current: propTypes.any }),
-  homeAnchor: propTypes.shape({ current: propTypes.any }),
-  skillAnchor: propTypes.shape({ current: propTypes.any }),
-  projectAnchor: propTypes.shape({ current: propTypes.any }),
-  contactAnchor: propTypes.shape({ current: propTypes.any }),
-  active: propTypes.number,
+  aboutAnchor: PropTypes.shape({ current: PropTypes.any }),
+  experienceAnchor: PropTypes.shape({ current: PropTypes.any }),
+  homeAnchor: PropTypes.shape({ current: PropTypes.any }),
+  skillAnchor: PropTypes.shape({ current: PropTypes.any }),
+  projectAnchor: PropTypes.shape({ current: PropTypes.any }),
+  contactAnchor: PropTypes.shape({ current: PropTypes.any }),
+  active: PropTypes.number,
+  collapse: PropTypes.bool,
+  setCollapse: PropTypes.func,
 };
 Sidebar.defaultProps = {
   aboutAnchor: {},
@@ -176,5 +177,7 @@ Sidebar.defaultProps = {
   projectAnchor: {},
   contactAnchor: {},
   active: 0,
+  collapse: false,
+  setCollapse: () => {},
 };
 export default Sidebar;

@@ -276,11 +276,11 @@ body {
 .picture {
   width: 450px;
   height: 550px;
-  background: url(./image/me.jpg) top / cover;
   position: absolute;
   z-index: 3;
   top: 0;
   left: 64px;
+  object-fit: cover;
 }
 
 .picture-background {

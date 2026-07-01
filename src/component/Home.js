@@ -1,6 +1,7 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import { BsFillArrowDownSquareFill } from 'react-icons/bs';
+import img1 from '../image/me.jpg';
 
 function Home({ homeAnchor, aboutAnchor }) {
   return (
@@ -13,7 +14,7 @@ function Home({ homeAnchor, aboutAnchor }) {
         <div className="home-content">
           <div className="picture-wrapper">
             <div className="picture-border" />
-            <div className="picture" />
+            <img className="picture" src={img1} alt="me" />
             <div className="picture-background" />
           </div>
           <div className="home-title-wrapper">
