@@ -7,6 +7,7 @@ import {
 /* import todopic from '../image/todolist.jpg'; */
 /* import calculaterpic from '../image/Calculator.jpg'; */
 import pomodoropic from '../image/Pomodoro.jpg';
+import movieSearch from '../image/movieSearch.png';
 /* import linepic from '../image/line.jpg'; */
 
 function Project({ projectAnchor, contactAnchor }) {
@@ -41,6 +42,28 @@ function Project({ projectAnchor, contactAnchor }) {
                 </div>
               </div>
             </div> */}
+            <div className="project-list project-list-left">
+              <div className="project-list-image">
+                <a href="https://movie-search-2epp.vercel.app/">
+                  <img src={movieSearch} alt="" />
+                </a>
+                <div className="exclamationIcon-wrapper">
+                  <BsExclamationOctagon className="exclamationIcon" />
+                  <div className="project-exclamation-wrapper">
+                    <p>
+                      串接 TMDB API
+                      的電影搜尋應用，支援關鍵字搜尋、查看電影詳細資訊，以及
+                      localStorage 收藏清單功能。
+                      <br />
+                      使用技術：React、React Router、自定義 useFetch Hook、TMDB
+                      API、localStorage 部署：Vercel
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="project-list-title">Movie Search</div>
+              <div className="project-list-desc" />
+            </div>
             <div className="project-list project-list-left">
               <div className="project-list-image">
                 <a href="https://g01965250.github.io/git-pomodoro/">
