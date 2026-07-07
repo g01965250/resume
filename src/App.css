@@ -488,7 +488,7 @@ body {
 }
 
 .project-list-image:hover img {
-  transform: scale(0.8);
+  transform: scale(0.5);
 }
 
 .project-list-image:hover .exclamationIcon {
