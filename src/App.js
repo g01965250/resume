@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef /* useEffect */ } from 'react';
 import './App.css';
 import Sidebar from './component/Sidebar';
 import Home from './component/Home';
@@ -7,6 +7,16 @@ import Experience from './component/Experience';
 import Skill from './component/Skill';
 import Project from './component/Project';
 import Contact from './component/Contact';
+import useScrollSpy from './hooks/useScrollSpy';
+
+const SECTION_IDS = [
+  'home',
+  'about',
+  'experience',
+  'skill',
+  'project',
+  'contact',
+];
 
 function App() {
   const homeAnchor = useRef(null);
@@ -15,10 +25,12 @@ function App() {
   const skillAnchor = useRef(null);
   const projectAnchor = useRef(null);
   const contactAnchor = useRef(null);
-  const [active, setActive] = useState(0);
+  /* const [active, setActive] = useState(0); */
   const [collapse, setCollapse] = useState(false);
 
-  const handleScroll = function () {
+  const activeId = useScrollSpy(SECTION_IDS);
+
+  /*   const handleScroll = function () {
     const { scrollY } = window;
     if (scrollY >= 0 && scrollY <= 949) {
       setActive(0);
@@ -33,15 +45,31 @@ function App() {
     } else if (scrollY >= 5991) {
       setActive(5);
     }
-  };
+  }; */
 
-  useEffect(() => {
+  /*  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    },
+    {
+      root: null, // 用 viewport 當基準
+      rootMargin: '-50% 0px -50% 0px', // 關鍵:只有「畫面正中間那條線」算數
+      threshold: 0,
+    },
+  ); */
+
+  /*  useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     handleScroll();
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  });
+  }); */
+
   return (
     <div className="App">
       <main className="main">
@@ -52,7 +80,8 @@ function App() {
           skillAnchor={skillAnchor}
           projectAnchor={projectAnchor}
           contactAnchor={contactAnchor}
-          active={active}
+          /* active={active} */
+          activeId={activeId}
           collapse={collapse}
           setCollapse={setCollapse}
         />

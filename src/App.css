@@ -314,6 +314,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
+  gap: 20px;
 }
 
 .about-label {
@@ -848,7 +849,6 @@ body {
 
   /* Content 推下去，不被 hamburger bar 蓋住 */
   .content-wrapper {
-    margin-left: 0 !important;
     margin-top: 60px;
   }
 
@@ -860,7 +860,7 @@ body {
   .skill-wrapper,
   .project-wrapper,
   .contact-wrapper {
-    padding: 60px 20px;
+    padding: 60px 20px 60px 0px;
   }
 
   .section-title,
@@ -898,9 +898,43 @@ body {
     background-position: top;
   }
 
+  .about-desc {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .about-label {
+    font-size: 18px;
+    line-height: 1.4;
+    padding: 6px 16px;
+    margin: 0 10px 16px 0;
+  }
+
   /* Cards */
   .card-item {
     padding: 30px 20px;
+  }
+
+  .card-item h2 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .card-item h3 {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .card-item span {
+    display: block;
+    margin-left: 0;
+    margin-top: 4px;
+    font-size: 15px;
+  }
+
+  .card-item p {
+    font-size: 15px;
+    line-height: 1.7;
   }
 
   .skill-box {

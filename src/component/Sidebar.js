@@ -19,7 +19,7 @@ function Sidebar({
   skillAnchor,
   projectAnchor,
   contactAnchor,
-  active,
+  activeId,
   collapse,
   setCollapse,
 }) {
@@ -41,7 +41,9 @@ function Sidebar({
           <nav className="nav-wrapper">
             <div className="nav-title">Orton</div>
             <ul>
-              <li className={`nav-btn  ${active === 0 ? 'nav-active' : ''}`}>
+              <li
+                className={`nav-btn  ${activeId === 'home' ? 'nav-active' : ''}`}
+              >
                 <button
                   type="button"
                   onClick={() => {
@@ -54,7 +56,9 @@ function Sidebar({
                   HOME
                 </button>
               </li>
-              <li className={`nav-btn  ${active === 1 ? 'nav-active' : ''}`}>
+              <li
+                className={`nav-btn  ${activeId === 'about' ? 'nav-active' : ''}`}
+              >
                 <button
                   type="button"
                   onClick={() => {
@@ -67,7 +71,9 @@ function Sidebar({
                   ABOUT ME
                 </button>
               </li>
-              <li className={`nav-btn  ${active === 2 ? 'nav-active' : ''}`}>
+              <li
+                className={`nav-btn  ${activeId === 'experience' ? 'nav-active' : ''}`}
+              >
                 <button
                   type="button"
                   onClick={() => {
@@ -80,7 +86,9 @@ function Sidebar({
                   EXPERIENCE
                 </button>
               </li>
-              <li className={`nav-btn  ${active === 3 ? 'nav-active' : ''}`}>
+              <li
+                className={`nav-btn  ${activeId === 'skill' ? 'nav-active' : ''}`}
+              >
                 <button
                   type="button"
                   onClick={() => {
@@ -93,7 +101,9 @@ function Sidebar({
                   SKILL
                 </button>
               </li>
-              <li className={`nav-btn  ${active === 4 ? 'nav-active' : ''}`}>
+              <li
+                className={`nav-btn  ${activeId === 'project' ? 'nav-active' : ''}`}
+              >
                 <button
                   type="button"
                   onClick={() => {
@@ -106,7 +116,9 @@ function Sidebar({
                   PROJECT
                 </button>
               </li>
-              <li className={`nav-btn  ${active === 5 ? 'nav-active' : ''}`}>
+              <li
+                className={`nav-btn  ${activeId === 'contact' ? 'nav-active' : ''}`}
+              >
                 <button
                   type="button"
                   onClick={() => {
@@ -165,7 +177,7 @@ Sidebar.propTypes = {
   skillAnchor: PropTypes.shape({ current: PropTypes.any }),
   projectAnchor: PropTypes.shape({ current: PropTypes.any }),
   contactAnchor: PropTypes.shape({ current: PropTypes.any }),
-  active: PropTypes.number,
+  activeId: PropTypes.string,
   collapse: PropTypes.bool,
   setCollapse: PropTypes.func,
 };
@@ -176,7 +188,7 @@ Sidebar.defaultProps = {
   skillAnchor: {},
   projectAnchor: {},
   contactAnchor: {},
-  active: 0,
+  activeId: 0,
   collapse: false,
   setCollapse: () => {},
 };
