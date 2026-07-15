@@ -38,7 +38,7 @@ function Sidebar({
               <BsFillArrowLeftSquareFill />
             )}
           </button>
-          <nav className="nav-wrapper">
+          <nav className="nav-wrapper" data-active={activeId}>
             <div className="nav-title">Orton</div>
             <ul>
               <li
