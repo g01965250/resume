@@ -107,6 +107,7 @@ body {
 .nav-btn {
   margin-bottom: 3px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .nav-btn button {
@@ -459,10 +460,13 @@ body {
 }
 
 .project-list-desc {
-  font-size: 18px;
-  font-family: var(--font-en);
-  text-align: center;
-  margin-bottom: 33px;
+  margin: 5px 0 10px;
+  padding: 18px 18px;
+  border-radius: 8px;
+  background: var(--yellow);
+  line-height: 1.5;
+  display: none;
+  font-size: 16px;
 }
 
 .project-list-image {
@@ -973,6 +977,9 @@ body {
   /* Project */
   .project-list {
     width: 100%;
+  }
+  .project-list-desc {
+    display: block;
   }
 
   .project-list-image {

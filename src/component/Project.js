@@ -61,8 +61,19 @@ function Project({ projectAnchor, contactAnchor }) {
                   </div>
                 </div>
               </div>
+              <div className="project-list-desc">
+                <p>
+                  串接 TMDB API
+                  的電影搜尋應用，支援關鍵字搜尋、查看電影詳細資訊，以及
+                  localStorage 收藏清單功能。
+                  <br />
+                  使用技術：React、React Router、自定義 useFetch Hook、TMDB
+                  API、localStorage
+                  <br />
+                  部署：Vercel
+                </p>
+              </div>
               <div className="project-list-title">Movie Search</div>
-              <div className="project-list-desc" />
             </div>
             <div className="project-list project-list-left">
               <div className="project-list-image">
@@ -83,8 +94,18 @@ function Project({ projectAnchor, contactAnchor }) {
                   </div>
                 </div>
               </div>
+              <div className="project-list-desc">
+                <p>
+                  結合 Todo List
+                  的番茄鐘計時器，使用者可新增待辦事項並選擇當前任務，搭配 25
+                  分鐘倒數計時專注完成。
+                  <br />
+                  使用技術：React、useState、useEffect、元件化架構
+                  <br />
+                  部署：GitHub Page
+                </p>
+              </div>
               <div className="project-list-title">番茄鐘</div>
-              <div className="project-list-desc" />
             </div>
             {/* <div className="project-list">
               <div className="project-list-title">To-Do List</div>
